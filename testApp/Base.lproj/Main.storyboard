@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="r68-h9-uSK">
             <objects>
-                <viewController id="ICq-fp-Pe9" sceneMemberID="viewController">
+                <viewController id="ICq-fp-Pe9" userLabel="Result View Controller" customClass="ResultViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eon-Gi-lRS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,9 @@
                                 <rect key="frame" x="186" y="205" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="sbo-79-0Uv" kind="unwind" unwindAction="restart:" id="xng-JN-ALf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -59,6 +62,7 @@
                     <navigationItem key="navigationItem" id="zO9-ns-KLM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gV-zC-jtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sbo-79-0Uv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="887" y="129"/>
         </scene>
